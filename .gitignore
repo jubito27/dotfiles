@@ -1,0 +1,120 @@
+# # ==========================================
+# # Caches, Logs, and Temporary Files
+# # ==========================================
+# [Cc]ache/
+# [Cc]aches/
+# [Cc]ached*/
+# GPUCache/
+# Code Cache/
+# DawnGraphiteCache/
+# DawnWebGPUCache/
+# ScriptCache/
+# logs/
+# *.log
+# 
+# # ==========================================
+# # Electron & Browser App State
+# # ==========================================
+# Cookies
+# Cookies-journal
+# Crashpad/
+# blob_storage/
+# Local Storage/
+# Session Storage/
+# SharedStorage/
+# WebStorage/
+# Network Persistent State
+# Trust Tokens*
+# declarative_performance_observer.db*
+# DIPS
+# QuotaManager*
+# DevToolsActivePort
+# TransportSecurity
+# mozilla/
+# ZapZap/
+# BetterDiscord/
+# Vencord/
+# vesktop/
+# Equicord/
+# legcord/
+# browseruse/
+# jxbrowser/
+# 
+# # ==========================================
+# # Machine-Specific IDs & Databases
+# # ==========================================
+# machineid
+# user-uuid
+# *.vscdb
+# *.vscdb.backup
+# baloofileinformationrc
+# 
+# # ==========================================
+# # IDE & Editor Bloat (Antigravity / Code)
+# # ==========================================
+# User/History/
+# User/workspaceStorage/
+# Backups/
+# Code/agent-host/
+# Code/sdk-cache/
+# Code/
+# Code - OSS/
+# VSCodium/
+# zed/
+# Antigravity*/
+# aichat/
+# Codex/
+# shell_gpt/
+# # ==========================================
+# # Heavy Dependencies
+# # ==========================================
+# node_modules/
+# 
+# 
+# # ==========================================
+# # System State, Binary DBs & Caches
+# # ==========================================
+# dconf/
+# pulse/
+# yay/
+# matplotlib/
+# libreoffice/
+# session/
+# tool_state
+# user-dirs.*
+# baloofileinformationrc
+# 
+# # ==========================================
+# # Backups & Redundant Folders
+# # ==========================================
+# caelestia_backup/
+# index-dir/
+# hypr_backup/
+# *_backup/
+# # ==========================================
+# # Dev Tools, Emulators & Secrets
+# # ==========================================
+# docker-secrets-engine/
+# Docker Desktop/
+# Android Open Source Project/
+# cagent/
+# configstore/
+# Google/
+# dvc/
+# iterative/
+# go/
+# jgit/
+
+# 1. Ignore everything in the config directory by default
+/*
+
+# 2. Allow the .gitignore file itself to be uploaded
+!.gitignore
+
+# 3. Allow only your specific aesthetic and system configs
+!/hypr/
+!/caelestia/
+!/kitty/
+!/btop/
+!/waybar/
+!/starship.toml

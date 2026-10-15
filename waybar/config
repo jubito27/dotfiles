@@ -1,0 +1,177 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 38,
+    "margin-top": 6,
+    "margin-left": 10,
+    "margin-right": 10,
+    "spacing": 4,
+
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "network", "battery", "tray"],
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "urgent": "",
+            "active": "",
+            "default": ""
+        }
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 35,
+        "separate-outputs": true
+    },
+
+    "clock": {
+        "timezone": "Asia/Kolkata",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": " {:%I:%M %p}",
+        "format-alt": " {:%A, %B %d, %Y}"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "network": {
+        "format-wifi": " {essid}",
+        "format-ethernet": "󰈀 {ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "format-linked": "{ifname} (No IP) 󰊗",
+        "format-disconnected": "⚠ Disconnected",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon} {volume}%",
+        "format-muted": " Muted",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 8
+    }
+}
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(24, 24, 37, 0.85); /* Semi-transparent dark background */
+    border-radius: 12px;
+    color: #cdd6f4;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* --- Workspaces --- */
+#workspaces {
+    background-color: #1e1e2e;
+    margin: 4px;
+    padding: 2px 6px;
+    border-radius: 8px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: #6c7086;
+    border-radius: 6px;
+}
+
+#workspaces button.active {
+    color: #89b4fa;
+}
+
+#workspaces button.urgent {
+    color: #f38ba8;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #cdd6f4;
+}
+
+/* --- Window Title --- */
+#window {
+    background-color: #1e1e2e;
+    padding: 0 12px;
+    margin: 4px 0px;
+    border-radius: 8px;
+    color: #a6adc8;
+}
+
+/* --- Modules Center & Right --- */
+#clock, #battery, #network, #pulseaudio, #tray {
+    background-color: #1e1e2e;
+    padding: 0 12px;
+    margin: 4px 2px;
+    border-radius: 8px;
+}
+
+/* Module-specific accent colors */
+#clock {
+    color: #cba6f7;
+}
+
+#battery {
+    color: #a6e3a1;
+}
+
+#battery.warning {
+    color: #fab387;
+}
+
+#battery.critical {
+    color: #f38ba8;
+}
+
+#network {
+    color: #8982f7;
+}
+
+#pulseaudio {
+    color: #74c7ec;
+}
+
+#pulseaudio.muted {
+    color: #6c7086;
+}
+
+#tray {
+    margin-right: 4px;
+}

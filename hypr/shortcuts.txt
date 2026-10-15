@@ -1,0 +1,137 @@
+=== Workspace ===
+SUPER + 1..0                -> Go to workspace 1–10
+SUPER + ALT + 1..0          -> Move active window to workspace 1–10
+CTRL + SUPER + 1..0         -> Go to workspace group 1–10
+CTRL + SUPER + ALT + 1..0   -> Move active window to workspace group 1–10
+
+SUPER + mouse_down          -> Next workspace
+SUPER + mouse_up            -> Previous workspace
+CTRL + SUPER + mouse_down   -> Next workspace group
+CTRL + SUPER + mouse_up     -> Previous workspace group
+
+SUPER + ALT + mouse_down    -> Move active window to next workspace
+SUPER + ALT + mouse_up      -> Move active window to previous workspace
+
+=== Window Focus & Movement ===
+SUPER + Left                -> Focus window to the left
+SUPER + Right               -> Focus window to the right
+SUPER + Up                  -> Focus window above
+SUPER + Down                -> Focus window below
+
+SUPER + SHIFT + Left        -> Move window to the left
+SUPER + SHIFT + Right       -> Move window to the right
+SUPER + SHIFT + Up          -> Move window up
+SUPER + SHIFT + Down        -> Move window down
+
+=== Window Size / Layout ===
+SUPER + Minus               -> Decrease window width
+SUPER + Equal               -> Increase window width
+SUPER + SHIFT + Minus       -> Decrease window height
+SUPER + SHIFT + Equal       -> Increase window height
+
+CTRL + SUPER + Backslash    -> Center active window
+CTRL + SUPER + ALT + Backslash -> Normalize window size and center
+
+SUPER + ALT + Backslash     -> Picture-in-picture: float + pin active window
+
+=== Window Modes & Closing ===
+SUPER + P                   -> Pin/unpin active window
+SUPER + F                   -> Fullscreen
+SUPER + ALT + F             -> Maximized/bordered fullscreen
+SUPER + ALT + Space         -> Toggle window floating
+SUPER + Q                   -> Close active window
+
+=== Window Groups ===
+ALT + TAB                   -> Cycle next window in current group
+SHIFT + ALT + TAB           -> Cycle previous window in current group
+CTRL + ALT + TAB            -> Cycle next window group
+CTRL + SHIFT + ALT + TAB    -> Cycle previous window group
+
+SUPER + Comma               -> Toggle group (add/remove window from group)
+SUPER + U                   -> Ungroup active window
+SUPER + SHIFT + Comma       -> Lock/unlock active group
+
+=== Mouse + Window Actions ===
+SUPER + mouse:272           -> Drag window with mouse (move)
+SUPER + mouse:273           -> Resize window with mouse
+
+=== Special Workspaces ===
+SUPER + S                   -> Toggle main special workspace ("specialws")
+CTRL + SHIFT + Escape       -> Toggle system monitor workspace
+SUPER + M                   -> Toggle music workspace
+SUPER + D                   -> Toggle communication workspace
+SUPER + R                   -> Toggle todo workspace
+
+SUPER + ALT + S             -> Move active window to special workspace
+CTRL + SUPER + SHIFT + Up   -> Move active window to special workspace
+CTRL + SUPER + SHIFT + Down -> Move active window back from special workspace
+
+=== Shell / Caelestia UI ===
+SUPER + SUPER_L             -> Launcher (Caelestia launcher)
+CTRL + ALT + Delete         -> Session menu (logout / reboot etc.)
+SUPER + N                   -> Sidebar (Caelestia sidebar)
+CTRL + ALT + C              -> Clear all notifications
+SUPER + K                   -> Show all panels (Caelestia:showall)
+
+SUPER + L                   -> Lock screen
+SUPER + ALT + L             -> Restore lock & start Caelestia shell
+SUPER + SHIFT + L           -> Sleep (suspend-then-hibernate)
+
+SUPER + SUPER_L             -> App launcher
+
+=== Apps ===
+SUPER + T                   -> Terminal (foot)
+SUPER + W                   -> Browser (Firefox)
+SUPER + C                   -> Editor (VS Code)
+SUPER + E                   -> File explorer (Thunar)
+CTRL + ALT + V              -> Audio settings (pavucontrol)
+
+=== Screenshots & Recording ===
+SUPER + Print               -> Screenshot (Caelestia screenshot)
+SUPER + SHIFT + S           -> Freeze screenshot mode
+Print                       -> Region screenshot
+
+CTRL + ALT + R              -> Record screen
+SUPER + ALT + R             -> Record sound only
+SUPER + SHIFT + ALT + R     -> Record region
+
+SUPER + SHIFT + C           -> Color picker (hyprpicker -a)
+
+=== Brightness ===
+XF86MonBrightnessUp         -> Increase screen brightness
+XF86MonBrightnessDown       -> Decrease screen brightness
+
+=== Media Controls ===
+CTRL + SUPER + Space        -> Play/Pause media
+XF86AudioPlay               -> Play/Pause media
+XF86AudioPause              -> Play/Pause media
+
+CTRL + SUPER + Equal        -> Next track
+XF86AudioNext               -> Next track
+
+CTRL + SUPER + Minus        -> Previous track
+XF86AudioPrev               -> Previous track
+
+CTRL + SUPER + Backspace    -> Stop media
+XF86AudioStop               -> Stop media
+
+=== Volume / Audio ===
+SUPER + SHIFT + M           -> Mute/unmute speakers
+XF86AudioMute               -> Mute/unmute speakers
+
+XF86AudioMicMute            -> Mute/unmute microphone
+
+XF86AudioRaiseVolume        -> Volume up (step = volumeStep, max = volumeMax)
+XF86AudioLowerVolume        -> Volume down (step = volumeStep)
+
+=== Sleep ===
+SUPER + SHIFT + L           -> Sleep (systemctl suspend-then-hibernate)
+
+=== Clipboard & Emoji ===
+SUPER + V                   -> Open Caelestia clipboard
+SUPER + ALT + V             -> Clipboard delete mode
+CTRL + SHIFT + ALT + V      -> Paste latest clipboard entry
+SUPER + Period              -> Emoji picker
+
+=== Test / Debug ===
+SUPER + ALT + F12           -> Test notification (Shell demo)
